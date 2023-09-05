@@ -1,0 +1,64 @@
+body {
+    background-color: pink;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: auto/ 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 90vw;
+    color: white;
+    margin: 0 auto;
+    
+}
+
+.grid {
+    min-height: 150px;
+    background-color: blue;
+}
+
+.logo-item {
+    grid-column: 1/2;
+}
+
+.menu-item {
+    grid-column: 2/5;
+}
+
+.main-item {
+    grid-column: 1/3;
+}
+
+.aside-item {
+ grid-column: 3 /5;
+}
+
+.sponsers-item, .footer-item {
+    grid-column: 1/5;
+}
+
+.sponsers-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sponsers {
+    background-color: pink;
+    min-height: 75px;
+    max-width: 75px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .grid-container {
+        grid-template: auto/ 1fr 2fr 1.5fr;
+    }
+}
